@@ -6,19 +6,14 @@
 
 body {
   display: flex;
-  width: 100vw;
+  width: 90%;
+  margin-left: 10%;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(69, 86, 102) 0%,
     rgb(34, 34, 34) 90%
   );
   color: #e0e0e0;
-}
-
-.container {
-  display: flex;
-  margin-left: 200px;
-  box-sizing: border-box;
 }
 
 #sidebar {
@@ -37,7 +32,7 @@ body {
 }
 
 .toggle {
-  margin-left: 20px;
+  margin-left: 25%;
   position: relative;
   width: 70px;
   height: 70px;
@@ -93,30 +88,18 @@ body {
 .menuNav {
   display: none;
   position: relative;
-  top: 120px;
-  left: 10px;
+  margin: 8px auto;
   background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  padding: 10px;
   border-radius: 5px;
-  width: 150px;
-  flex-direction: column;
-}
-
-.menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  margin: 10px 0;
+  width: 120px;
+  text-align: center;
 }
 
 .menuNav a {
-  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   text-decoration: none;
+  cursor: pointer;
   font-size: 18px;
 }
 
@@ -137,19 +120,19 @@ body {
 }
 
 .main-content {
-  padding: 10px;
+  padding: 30px;
 }
 
 #accueil {
   height: 100vh;
-}
-
-#hello {
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 h1 .letter {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
   font-size: 180px;
   color: #75d29a;
   text-shadow: 0.1vw 0vw 0.25vw #38f380, 0.15vw 0vw 0.25vw #38f380,
@@ -173,11 +156,14 @@ h1 .letter {
 }
 
 h1 .letter-2 {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
   font-size: 150px;
   transform: translate(-0.2rem, 1rem) rotate(10deg);
 }
 
 #soustitre {
+  text-align: center;
   font-size: 15px;
 }
 
