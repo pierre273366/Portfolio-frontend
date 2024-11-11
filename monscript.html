@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr" style="scroll-behavior: smooth">
+  <link rel="stylesheet" href="style.css" />
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Portfolio by Pierre Roitg" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="sidebar">
+        <div class="toggle" onclick="toggleMenu(), playSound()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <audio id="click-hamburger" src="/audio/bubble-sound-43207.mp3"></audio>
+        <nav class="menuNav" id="menu">
+          <ul style="list-style-type: none">
+            <li><a href="#présentation">Présentation</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#mesprojets">Mes projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <a href="https://github.com/pierre273366" target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a href="https://linkedin.com/in/pierre-roitg" target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div id="accueil">
+          <div id="hello">
+            <h1 class="text">
+              <span class="letter letter-1">H</span>
+              <span class="letter letter-2">E</span>
+              <span class="letter letter-3">L</span>
+              <span class="letter letter-4">L</span>
+              <span class="letter letter-4">0</span>
+            </h1>
+            <div id="soustitre">
+              <p>i'm Pierre Roitg, developper web.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="presentationContain">
+          <h1 class="titrePresentation">Présentation</h1>
+          <div id="presentation">
+            <p class="whoiam">
+              Après plusieurs années en tant que responsable opérationel dans le
+              secteur du transport, j'ai décidé de me lancer dans le
+              développement web pour répondre à ma passion pour la technologie
+              et la création.<br />
+              Avant de me former au sien de "La Capsule", j'ai exercé en tant
+              que responsable opération dans le transport, où j'ai géré des
+              équipes et optimisé les processus. Cette expérience m'a permis de
+              développer des compétences en gestion et en résolution de
+              problèmes, tout en nourrissant mon intérêt pour les solutions
+              technologiques innovantes.Mon objectif est de travailler dans une
+              équipe innovante, où je pourrai continuer à apprendre et à
+              contribuer à des projets qui améliorent la vie des utilisateurs.
+            </p>
+          </div>
+        </div>
+
+        <div id="Skills">
+          <h1 class="titreSkills">Skills</h1>
+          <div id="logos">
+            <img class="logo" src="/image/js.png" alt="logo javascript" />
+            <img class="logo" src="/image/html-5.png" alt="logo HTML" />
+            <img class="logo" src="/image/css-3.png" alt="logo CSS" />
+            <img class="logo" src="/image/atom.png" alt="logo react" />
+          </div>
+        </div>
+
+        <div id="ProjetsContain">
+          <h1 class="titreProjets">Projets</h1>
+          <div id="mesprojets"></div>
+        </div>
+
+        <div id="ContactContain">
+          <h1 class="titleContact">Contact</h1>
+          <div id="Contact">
+            <div id="formulaire">
+              <form action="submit_form.php" method="post">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  class="barre"
+                  id="name"
+                  name="name"
+                  placeholder="Nom"
+                  required
+                />
+                <label for="societe"></label>
+                <input
+                  type="text"
+                  class="barre"
+                  id="societe"
+                  name="societe"
+                  placeholder="Societe"
+                  required
+                />
+                <label for="telephone"></label>
+                <input
+                  type="text"
+                  class="barre"
+                  id="phone"
+                  name="phone"
+                  placeholder="Téléphone"
+                  required
+                />
+                <label for="email"></label>
+                <input
+                  type="text"
+                  class="barre"
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <label for="message"></label>
+                <textarea
+                  class="barre"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button class="barre" type="submit">Soumettre</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <p>Pierre Roitg ©</p>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
