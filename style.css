@@ -211,6 +211,22 @@ h1 .letter-2 {
   margin: 0 10px;
 }
 
+.progress-container {
+  width: 130%;
+  background-color: grey;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #38f380;
+  border-radius: 25px;
+  text-align: center;
+  color: black;
+  transition: width 0.3s;
+}
+
 #ProjetsContain {
   height: 100vh;
 }
