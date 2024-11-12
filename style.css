@@ -114,9 +114,7 @@ body {
 .social-links a {
   font-size: 30px;
   margin: 10px 0;
-  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
+  color: #12ea65;
 }
 
 .main-content {
@@ -141,7 +139,7 @@ h1 .letter {
     0.1vw 0vw 0.1vw #12ea65, 0.15vw 0vw 0.1vw #12ea65, 0.15vw 0vw 0.5vw #12ea65,
     0.1vw 0vw 0.5vw #12ea65, 0.15vw 0vw 0.2vw #12ea65, 0.15vw 0vw 0.15vw #12ea65;
   display: inline-block;
-  animation: neon 0.5s ease-in-out infinite alternate;
+  animation: neon 0.2s ease-in-out infinite alternate;
 }
 
 @keyframes neon {
@@ -224,7 +222,7 @@ h1 .letter-2 {
   border-radius: 25px;
   text-align: center;
   color: black;
-  transition: width 0.3s;
+  transition: width 1s;
 }
 
 #ProjetsContain {
@@ -239,6 +237,9 @@ h1 .letter-2 {
 #mesprojets {
   display: flex;
   height: 600px;
+  width: 1000px;
+  overflow-x: scroll;
+  white-space: nowrap;
   justify-content: space-around;
   align-items: center;
   border: #12ea65 solid;
@@ -247,6 +248,15 @@ h1 .letter-2 {
     0.1vw 0vw 0.2vw #28e471, 0.15vw 0vw 0.2vw #28e471, 0.15vw 0vw 0.2vw #28e471,
     0.1vw 0vw 0.1vw #12ea65, 0.15vw 0vw 0.1vw #12ea65, 0.15vw 0vw 0.5vw #12ea65,
     0.1vw 0vw 0.5vw #12ea65, 0.15vw 0vw 0.2vw #12ea65, 0.15vw 0vw 0.15vw #12ea65;
+}
+
+#tickethack{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
 }
 
 #ContactContain {
@@ -298,4 +308,10 @@ textarea {
 #footer {
   text-align: center;
   color: #12ea65;
+}
+
+/* adaptation phone :
+
+@media screen {
+  max-height: 400px;
 }
