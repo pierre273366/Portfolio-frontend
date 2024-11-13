@@ -188,6 +188,33 @@ h1 .letter-2 {
   font-size: 20px;
 }
 
+#photo-container {
+  position: relative;
+  display: none;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#photo {
+  width: 150px;
+  border-radius: 70%;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /*Compétences*/
 
 .titreSkills {

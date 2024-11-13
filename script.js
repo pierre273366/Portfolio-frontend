@@ -14,6 +14,20 @@ function playSound() {
   clickSound.play();
 }
 
+//photo presentation :
+
+document.addEventListener("DOMContentLoaded", function () {
+  const photoContainer = document.getElementById("photo-container");
+  setTimeout(() => {
+    photoContainer.style.display = "block";
+    setTimeout(() => {
+      photoContainer.style.display = "none";
+    }, 8000);
+  }, 2000);
+});
+
+// Barre skills:
+
 function moveJs() {
   let elem = document.getElementById("progress-bar-js");
   let width = 0;
