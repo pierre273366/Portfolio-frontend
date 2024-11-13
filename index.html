@@ -4,6 +4,7 @@
 
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio by Pierre Roitg" />
     <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +12,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Tilt+Neon&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -155,23 +160,29 @@
         <div id="ProjetsContain">
           <h1 class="titreProjets">Projets</h1>
           <div id="mesprojets">
-            <div>
-              <img id="tickethack" src="image/tickets.png" />
-              <p>Site de réservation en ligne</p>
-              <p>Projet de formation</p>
-            </div>
-            <div>
-              <img id="tickethack" src="image/mymovie.png" />
-              <p>Site de recommandation de film</p>
-              <p>Projet de formation</p>
-            </div>
-            <div>
-              <img id="tickethack" src="image/tickets.png" />
-              <p>Site de réservation en ligne</p>
-            </div>
-            <div>
-              <img id="tickethack" src="image/tickets.png" />
-              <p>Site de réservation en ligne</p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="tickethack" src="image/tickets.png" />
+                  <p>Site de réservation en ligne</p>
+                  <p>Projet de formation</p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="tickethack" src="image/mymovie.png" />
+                  <p>Site de recommandation de film</p>
+                  <p>Projet de formation</p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="tickethack" src="image/tickets.png" />
+                  <p>Site de réservation en ligne</p>
+                </div>
+                <div class="swiper-slide">
+                  <img class="tickethack" src="image/mymovie.png" />
+                  <p>Site de réservation en ligne</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -226,14 +237,34 @@
                   placeholder="Message"
                   required
                 ></textarea>
-                <button class="barre" type="submit">Soumettre</button>
+                <div>
+                  <button class="btn-2">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          height="24"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path
+                            fill="currentColor"
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Send</span>
+                  </button>
+                </div>
               </form>
             </div>
           </div>
         </div>
-        <div id="footer">
-          <p>Pierre Roitg ©</p>
-        </div>
+      </div>
+      <div id="footer">
+        <p>Pierre Roitg ©</p>
       </div>
     </div>
     <script
@@ -244,6 +275,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
