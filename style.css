@@ -170,9 +170,73 @@ h1 .letter-2 {
   transform: translate(-0.2rem, 1rem) rotate(10deg);
 }
 
+/* soustitre neon:*/
+
 #soustitre {
   text-align: center;
   font-size: 15px;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0);
+}
+
+.neon {
+  height: 1vh;
+  line-height: 1vh;
+  text-align: center;
+  font-size: 10vh;
+  font-family: neon;
+  --lights: rgb(91, 235, 115);
+  text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+    0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+  animation: flicker 7s infinite;
+  filter: brightness(1);
+}
+
+@keyframes flicker {
+  9% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+      0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  10% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  11% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+      0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  12% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  13% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+      0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  66% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+      0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  67% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  75% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  76% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+      0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
 }
 
 /*Presentation*/
@@ -192,7 +256,7 @@ h1 .letter-2 {
   position: relative;
   display: none;
   text-align: center;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 #photo {
@@ -213,6 +277,10 @@ h1 .letter-2 {
   100% {
     opacity: 0;
   }
+}
+
+#gif-main {
+  width: 100px;
 }
 
 /*Compétences*/
